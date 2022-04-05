@@ -1,5 +1,5 @@
 {
-  "name": "API",
+  "name": "mini-auth-api",
   "version": "1.0.0",
   "description": "",
   "author": "quangpn<quangpn.dut@yahoo.com>",
@@ -118,5 +118,9 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "engines": {
+    "node": "16.4.2",
+    "npm": "8.5.0"
   }
 }
