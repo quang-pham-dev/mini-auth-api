@@ -5,7 +5,7 @@ import { TypegooseModule } from 'nestjs-typegoose';
 
 import { VALIDATION_SCHEMA } from '@config/app.config';
 import { AuthModule } from '@modules/auth/auth.module';
-import { GoalsModule } from '@modules/goals/goals.module';
+import { NotesModule } from '@modules/notes/notes.module';
 import { SearchModule } from '@modules/search/search.module';
 import { UsersModule } from '@modules/users/users.module';
 import { HelperModule } from '@processors/helper/helper.module';
@@ -25,7 +25,7 @@ import { OriginMiddleware } from 'middleware/origin.middleware';
     //#Feature modules
     AuthModule,
     UsersModule,
-    GoalsModule,
+    NotesModule,
     SearchModule,
   ],
   controllers: [AppController],

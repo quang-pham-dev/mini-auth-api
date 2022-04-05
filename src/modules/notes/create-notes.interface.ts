@@ -1,4 +1,4 @@
-export interface ICreateGoalDto {
+export interface ICreateNoteDto {
   title: string;
   description: string;
 }
