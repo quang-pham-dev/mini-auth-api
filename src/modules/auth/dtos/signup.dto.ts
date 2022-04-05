@@ -8,7 +8,7 @@ import {
   MaxLength,
   MinLength,
 } from 'class-validator';
-import { ISignUpDto } from '../interfaces/signup-dto.interface';
+import { ISignUpDto } from '../interfaces/signUp-dto.interface';
 
 export class SignUpDto implements ISignUpDto {
   @ApiProperty({ description: 'The email of the User' })
