@@ -39,8 +39,7 @@ export class AuthService {
     if (userExisting) {
       throw new BadRequestException(USER_EXISTING_ERROR);
     }
-    const confirmToken = this.mailService.sendVerificationLink(signUpDto.emailAddress);
-
+    const confirmToken = await this.mailService.sendVerificationLink(signUpDto.emailAddress);
     const newUser = await this.usersService.createNewUser({
       ...signUpDto,
       password: await hashPassword(signUpDto.password),
